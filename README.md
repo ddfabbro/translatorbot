@@ -1,0 +1,2 @@
+# translatorbot
+translator plugin

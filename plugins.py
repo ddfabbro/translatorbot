@@ -1,6 +1,6 @@
 import html
 from googletrans import Translator
-from slackbot.bot import default_reply, listen_to
+from slackbot.bot import default_reply, respond_to, listen_to
 
 translator = Translator()
 

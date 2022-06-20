@@ -1,6 +1,6 @@
 # translatorbot
 
-Translator bot using [`slackbot`](https://github.com/lins05/slackbot) for Slack
+Translator bot for Slack
 
 ## Dependencies
 
@@ -10,8 +10,3 @@ Translator bot using [`slackbot`](https://github.com/lins05/slackbot) for Slack
 ## References
 
 - [`slackbot` usage](https://github.com/lins05/slackbot/blob/develop/README.md#usage)
-
-## Issues
-- (SOLVED) AttributeError: 'NoneType' object has no attribute 'group' 
-    - https://github.com/ssut/py-googletrans/issues/234
-    - https://stackoverflow.com/questions/52455774/googletrans-stopped-working-with-error-nonetype-object-has-no-attribute-group

@@ -1,6 +1,6 @@
 # translatorbot
 
-Translator bot for Slack
+Translator bot using [`slackbot`](https://github.com/lins05/slackbot) for Slack
 
 ## Dependencies
 

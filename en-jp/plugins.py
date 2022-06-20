@@ -8,17 +8,21 @@ def translate(message):
     msg_in = html.unescape(message.body["text"])
 
     if msg_in != "":
-        if translator.detect(msg_in).lang == "en":
-            text = translator.translate(msg_in, dest = "ja").text
-        else:
-            text = translator.translate(msg_in, dest = "en").text
-
+        try:
+            if  translator.detect(msg_in).lang == "en":
+                text = translator.translate(msg_in, dest = "ja").text
+            else:
+                text = translator.translate(msg_in, dest = "en").text
+        except:
+            text = "エラー"
+        
         msg_out = "```{}```".format(text)
 
         if message.thread_ts == message.body["event_ts"]:
             message.send(msg_out)
         else:
             message.reply(msg_out)
+
 
 @default_reply
 def my_default_handler(message):
